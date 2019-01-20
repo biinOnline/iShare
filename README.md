@@ -1,2 +1,2 @@
-# NSE_EOD
-This pulls end of day data from the Nairobi Stock Exchange Directly into Excel.
+# iStock
+iStock scraps premium data from MyStocks Online. Data includes, company profiles, price performance score cards, stock charts, end of day data and breaking news streams.
