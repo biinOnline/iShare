@@ -30,8 +30,8 @@ except URLError as e:
 URL1= 'https://live.mystocks.co.ke/'
 URL2 = 'https://live.mystocks.co.ke/price_list/'
 payload = {
-                "Username": "YOUR USERNAME",
-                "Password": "YOUR PASSWORD"
+                "Username": "mwago.gatahi@gmail.com",
+                "Password": "9whZZKFP"
             }
 with requests.Session() as session:
     post = session.post(URL1, data=payload)
