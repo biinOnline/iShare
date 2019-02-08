@@ -30,8 +30,8 @@ except URLError as e:
 URL1= 'https://live.mystocks.co.ke/'
 URL2 = 'https://live.mystocks.co.ke/price_list/'
 payload = {
-                "Username": "YOUR USERNAME",
-                "Password": "YOUR PASSWORD"
+                "Username": "mwago.gatahi@gmail.com",
+                "Password": "9whZZKFP"
             }
 with requests.Session() as session:
     post = session.post(URL1, data=payload)
@@ -3859,26 +3859,19 @@ with requests.Session() as session:
                 main()
                     
         if choice =="3": 
-            quote_page = "https://live.mystocks.co.ke/stock=%255ENASI"
+            quote_page = "https://live.mystocks.co.ke/stock=%255EN25I"
             page = urllib.request.urlopen(quote_page)
             soup = BeautifulSoup(page, "lxml")
             news=soup.find("div", attrs={"id": "newsJson"})
             print(news.text)
-
-            quote_page1 = "https://live.mystocks.co.ke/stock=%255EN25I"
-            page = urllib.request.urlopen(quote_page1)
-            soup = BeautifulSoup(page, "lxml")
-            news1=soup.find("div", attrs={"id": "newsJson"})
-            print(news1.text)
             
         import csv
         #open a csv file with append, so old data will not be erased
         with open("BreakingNews.csv", "a", encoding="utf-8") as csv_file:
             writer = csv.writer(csv_file)
-            writer.writerow(["Breaking_News1", "Breaking_News2"])
+            writer.writerow(["Breaking_News1"])
             Breaking_News1=news.text
-            Breaking_News2=news1.text
-            writer.writerow([Breaking_News1, Breaking_News2])
+            writer.writerow([Breaking_News1])
         print("\n")
         print("********************")
         main()
