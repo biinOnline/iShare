@@ -11,7 +11,7 @@ os.environ['TK_LIBRARY'] = os.path.join(PYTHON_INSTALL_DIR, 'tcl', 'tk8.6')
 
 sys.argv.append("build")
 filename="iStock.py"
-icon= "stockcon.ico"
+icon= "is_icon.ico"
 
 base = None
 
@@ -24,16 +24,16 @@ options={
 if sys.platform=="win64":
     base="Win64GUI"
 
-exe = Executable(script='iStock.py', base = base, icon='stockcon.ico')
+exe = Executable(script='iStock.py', base = base, icon='is_icon.ico')
 
 additional_mods = ['numpy.core._methods', 'numpy.lib.format']
 additional_packages = ['asyncio', 'asyncio.compat', 'appdirs', 'pkg_resources._vendor', 'tkinter']
 
 setup(
-    name = "iStock compiles real-time market data.",
+    name = "iShare compiles real-time market data.",
     version = "1.2.0.1",
-    description = 'iStock compiles real-time market data.',
-    author = 'Wakili.AI',
+    description = 'iShare: Market Data.',
+    author = 'wakili.ai',
     options = {
         'build_exe': {
             'includes': additional_mods,

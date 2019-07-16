@@ -11,7 +11,7 @@ from urllib.error import URLError, HTTPError
 import sys
 from win10toast import ToastNotifier
 
-print("iStock [Version 1.2.0.1] | © 2019 | All rights reserved. ")
+print("iShare [Version 1.2.0.1] | © 2019 | All rights reserved. ")
 now = datetime.now()
 toaster = ToastNotifier()
 
@@ -221,57 +221,8 @@ with requests.Session() as session:
                     writer.writerow([Name, CompanyProfile, CurrentPrice, PreviousPrice, Change, LowestPrice, HighestPrice])
                 print("\n")
                 print("********************")
-
-##                print("\n")
-##                name1="Limuru Tea"
-##                quote_page = "https://live.mystocks.co.ke/stock=LIMT"
-##                page = urllib.request.urlopen(quote_page)
-##                soup = BeautifulSoup(page, "lxml")
-##                companyName=soup.find("td", attrs={"id": "stkName"})
-##                stockProfile=soup.find("div", attrs={"class": "stockProfile"})
-##                name_box1 = soup.find("b", attrs={"id": "rtPrev"})
-##                name_box2 = soup.find("div", attrs={"id": "rtTime"})
-##                name_box3 = soup.find("div", attrs={"id": "rtPrice"})
-##                name_box4 = soup.find("div", attrs={"id": "rtChange"})
-##                print("Company Profile: ", companyName.text)
-##                list=textwrap3.wrap(stockProfile.text, width=95)
-##                for element in list:
-##                    print(element)
-##                print("\n")
-##                print(name_box2.text)
-##                print("Current Price: ", name_box3.text)
-##                Currentprice=name_box3.text
-##                print("Previous Price: ", name_box1.text)
-##                previousPrice=name_box1.text
-##                print("Change: ", name_box4.text)
-##                print("\n")
-##                print("52 Week range")
-##                sharesIssued1 = soup.find("span", attrs={"id": "rtYrLow"})
-##                sharesIssued2 = soup.find("span", attrs={"id": "rtYrHigh"})
-##                print("Low: ", sharesIssued1.text)
-##                print("High: ", sharesIssued2.text)
-##                print("\n")
-##                #print(companyName.text, "related news")
-##                #news=soup.find("div", attrs={"id": "newsJson"})
-##                #print(news.text)
-##
-##                import csv
-##                with open("Limuru Tea.csv", "a", encoding="utf-8") as csv_file:
-##                    writer = csv.writer(csv_file)
-##                    writer.writerow(["Name",  "CompanyProfile", "CurrentPrice", "PreviousPrice", "Change", "LowestPrice", "HighestPrice"])
-##                    Name=name1
-##                    CompanyProfile=stockProfile.text
-##                    CurrentPrice= Currentprice
-##                    PreviousPrice=previousPrice
-##                    Change=name_box4.text
-##                    LowestPrice=sharesIssued1.text
-##                    HighestPrice=sharesIssued2.text
-##                    
-##                    writer.writerow([Name, CompanyProfile, CurrentPrice, PreviousPrice, Change, LowestPrice, HighestPrice])
-##                print("\n")
-##                print("********************")
-
                 print("\n")
+                
                 name1="Sasini Tea"
                 quote_page = "https://live.mystocks.co.ke/stock=SASN"
                 page = urllib.request.urlopen(quote_page)
